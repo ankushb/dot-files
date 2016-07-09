@@ -3,7 +3,7 @@
 
 import math, subprocess
 
-p = subprocess.Popen(["cat", "/sys/class/power_supply/BAT1/capacity"], stdout=subprocess.PIPE)
+p = subprocess.Popen(["cat", "/sys/class/power_supply/BAT0/capacity"], stdout=subprocess.PIPE)
 output = p.communicate()[0]
 
 # Output
